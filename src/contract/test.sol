@@ -35,7 +35,7 @@ contract MyContract is ERC2771Recipient {
     //     return version;
     // }
 
-    function _setMessage(string memory _newMessage) private{
+    function _setMessage(string memory _newMessage) public {
         message = _newMessage;
     }
 
